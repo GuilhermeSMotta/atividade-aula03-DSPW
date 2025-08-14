@@ -96,7 +96,7 @@ console.log(livrosTolkienPos1950);
 function criarCartoesDeLivros() {
     const lista = livros.map(livro => {
         const {titulo, autor, anoPublicacao} = livro;
-        lista.push(`Título: ${titulo} | Autor: ${autor} | Ano: ${anoPublicacao}`)
+        return `Título: ${titulo} | Autor: ${autor} | Ano: ${anoPublicacao}`
     })
     return lista
 }
