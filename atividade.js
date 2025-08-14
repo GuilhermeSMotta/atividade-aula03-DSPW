@@ -49,9 +49,7 @@ console.log(livrosDeDistopia);
 
 // Sua vez
 
-function obterApenasTitulos() {
-    return livros.map(livro => livro.titulo)
-}
+const obterApenasTitulos = () => livros.map(livro => livro.titulo)
 
 // Teste da Atividade 3
 console.log('\n--- Atividade 3: Lista de todos os títulos ---');
@@ -71,9 +69,7 @@ console.log(todosOsTitulos);
 
 // Sua vez
 
-function livrosDeAutorAposAno(autor, ano) {
-    return livros.filter(livro => livro.autor === autor).filter(livro => livro.anoPublicacao >= ano);
-}
+const livrosDeAutorAposAno = (autor, ano) => livros.filter(livro => livro.autor === autor).filter(livro => livro.anoPublicacao >= ano);
 
 // Teste da Atividade 4
 console.log('\n--- Atividade 4: Livros de J.R.R. Tolkien publicados após 1950 ---');
