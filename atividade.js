@@ -98,7 +98,7 @@ console.log(livrosTolkienPos1950);
 // Sua vez
 
 function criarCartoesDeLivros() {
-    let lista = [];
+    const lista = [];
     for (const livro of livros) {
         const {titulo, autor, anoPublicacao} = livro
         lista.push(`Título: ${titulo} | Autor: ${autor} | Ano: ${anoPublicacao}`)
